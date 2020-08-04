@@ -1,0 +1,30 @@
+- name: depok_humidity
+  path: $.humidity
+  labels:
+        environment: beta
+- name: depok_temp_C
+  path: $.temp_C
+  labels:
+        environment: beta
+
+- name: depok_temp_F
+  path: $.temp_F
+  labels:
+        environment: beta
+
+- name: depok_heat
+  path: $.heat
+  labels:
+        environment: beta
+
+- name: depok_power_usage
+  path: $.power_usage
+  labels:
+        environment: beta
+- name: depok_irms
+  path: $.irms
+  labels:
+        environment: beta
+
+
+###  json_exporter --port 7979 http://192.168.1.177/1.json /etc/prometheus/arduino/config.yml
