@@ -104,7 +104,7 @@ void loop() {
   vol=vol+l_menit;
   doc["volume"] = vol;
 
-    if (NbTopsFan == 0) {
+    if (NbTopsFan < 10) {
         doc["status"] = "OFF";
     } else {
         doc["status"] = "ON";
