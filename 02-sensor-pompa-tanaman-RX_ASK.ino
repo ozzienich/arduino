@@ -57,6 +57,7 @@ void loop()
     {
       int i;
       Serial.println(buf[0]);
+      Serial.println(buf[0]);
       digitalWrite(6,HIGH);
       air = 1; 
     }
@@ -70,7 +71,7 @@ void loop()
       digitalWrite(5,HIGH);
     }
 
-   doc["pompa_air"] = air;
+//   doc["pompa_air"] = air;
    doc["pompa_tanaman"] = siram;
   
   // Write response headers
